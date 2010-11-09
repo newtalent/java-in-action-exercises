@@ -1,4 +1,4 @@
-package jia.exercises.basics.krasimir.nachev;
+package jia.begins.exercises.basics.krasimir.nachev;
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,46 +15,6 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.Date;
-
-class OsParameters {
-    public String getOs() {
-      String osName;
-      osName  = System.getProperty("os.name");
-      return osName;
-
-    }
-
-    public String getUserName() {
-       String userName;
-       userName = System.getProperty("user.name");
-       return userName;
-    }
-
-    public String getOsVersion() {
-        String osVersion = System.getProperty("os.version");
-        return osVersion;
-    }
-
-}
-
-class UserQuesitions {
-
-
-    String ask = "What is your";
-    public void askFirstName() {
-     System.out.print( ask + " " + "First name:");
-    }
-    public void askSurName() {
-     System.out.print( ask + " "+ "Surname:");
-    }
-    public void askJobPosition() {
-    System.out.print(ask + " " + "Office position:");
-    }
-    public void askSalary() {
-     System.out.print(ask + " " + "Salary:");
-    }
-}
-
 
 public class Exercise1 {
     public static void main(String args[]) throws FileNotFoundException, IOException  {

@@ -1,4 +1,4 @@
-package jia.begins.examples.basics.bozhidar.batsov;
+package jia.begins.exercises.basics.bozhidar.batsov;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -11,8 +11,10 @@ import java.util.Scanner;
  */
 public class Exercise1 {
     public static void main(String[] args) throws IOException {
+        // create a file object associated with the target file
     	File employeesFile = new File ("employees.txt");
-        PrintWriter pw = new PrintWriter(new FileWriter(employeesFile,true));
+        // open the file in append mode
+        PrintWriter pw = new PrintWriter(new FileWriter(employeesFile, true));
         
         Scanner in = new Scanner(System.in);
         
@@ -23,15 +25,17 @@ public class Exercise1 {
         String lastName = in.next();
         
         System.out.print("Enter employee age: ");
-        int age=in.nextInt();
+        int age = in.nextInt();
         
-        System.out.print("Enter employee job: ");
-        String job = in.next();
+        System.out.print("Enter employee position: ");
+        String position = in.next();
         
         System.out.print("Enter employee salary: ");
-        int salary = in.nextInt();
+        double salary = in.nextDouble();
         
-        pw.println(String.format("%-15s %-15s %4d %-15s %10d", name, lastName, age, job, salary));
+        pw.println(String.format("%-15s %-15s %4d %-15s %10.2f", name, lastName, age, position, salary));
+
         pw.close();
+        in.close();
     }
 }

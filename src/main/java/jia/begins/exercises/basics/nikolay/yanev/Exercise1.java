@@ -1,4 +1,4 @@
-package jia.begins.examples.basics.nikolay.yanev;
+package jia.begins.exercises.basics.nikolay.yanev;
 
 import java.io.File;
 import java.io.FileWriter;
